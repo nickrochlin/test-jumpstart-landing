@@ -6,9 +6,7 @@ output:
     includes:
       in_header: header.html
 ---
-```{r echo=FALSE}
-knitr::read_chunk("./scripts/workshop_files.R")
-```
+
 ## RDM Jumpstart
 
 Some Content Here.
