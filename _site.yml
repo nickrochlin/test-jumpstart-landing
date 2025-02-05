@@ -1,0 +1,34 @@
+name: "RDM Jumpstart"
+output_dir: "docs"
+navbar:
+  title: "RDM Jumpstart"
+  left:
+    - text: "Day 1"
+      href: day_1.html
+    - text: "Day 2"
+      href: day_2.html
+    - text: "Day 3"
+      href: day_3.html
+      menu:
+        - text: "Day 3 - Part 1"
+          href: day_3-1.html
+        - text: "Day 3 - Part 2"
+          href: day_3-2.html
+    - text: "Day 4"
+      href: day_4.html
+      menu:
+        - text: "Day 4 - Part 1"
+          href: day_4-1.html
+        - text: "Day 4 - Part 2"
+          href: day_4-1.html
+    - text: "Day 5"
+      href: day_5.html
+    - text: "Resources"
+      href: resources.html
+output:
+  html_document:
+    theme: flatly
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css

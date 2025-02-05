@@ -1,0 +1,12 @@
+---
+title: "Day 5"
+output:
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+## Day 5

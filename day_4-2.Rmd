@@ -1,0 +1,12 @@
+---
+title: "Day 4 - Part 2"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+## Getting the Data

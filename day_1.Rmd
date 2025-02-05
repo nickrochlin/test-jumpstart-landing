@@ -1,0 +1,11 @@
+---
+title: "Day 1"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+## Day 1
