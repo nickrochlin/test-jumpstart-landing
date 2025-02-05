@@ -18,6 +18,10 @@
   margin-top: 50px;
 }
 
+h1 {
+  display: none;
+}
+
 h2, h3 {
   margin-top: 0px;
 }

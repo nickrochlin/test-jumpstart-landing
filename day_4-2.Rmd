@@ -1,5 +1,6 @@
 ---
 title: "Day 4 - Part 2"
+pagetitle: "Pending"
 output:
   html_document:
     toc: true

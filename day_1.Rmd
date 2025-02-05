@@ -1,5 +1,6 @@
 ---
 title: "Day 1"
+pagetitle: "Context"
 output:
   html_document:
     toc: true

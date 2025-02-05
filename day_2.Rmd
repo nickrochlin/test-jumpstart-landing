@@ -1,5 +1,6 @@
 ---
 title: "Day 2"
+pagetitle: "Mise en Place"
 output:
   html_document:
     toc: true

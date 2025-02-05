@@ -1,0 +1,11 @@
+---
+title: "Template" # this doesn't show anywhere, normally this would produce an H1 header at the top of the rendered page. This has been overriden in the css.
+pagetitle: "Something meaningful" # this appears in the tab
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---

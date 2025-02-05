@@ -1,5 +1,6 @@
 ---
 title: "Day 5"
+pagetitle: "Deposit and Wrap-Up"
 output:
   html_document:
     code_folding: hide

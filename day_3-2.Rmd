@@ -1,5 +1,6 @@
 ---
 title: "Day 3 - Part 2"
+pagetitle: "Scripting and Documentation"
 output:
   html_document:
     toc: true

@@ -4,7 +4,7 @@ This is the delivery content for the pilot RDM Jumpstart, scheduled to run May 1
 
 ## Using this Repository
 
-This website uses the [RMarkdown Website Generator](https://bookdown.org/yihui/rmarkdown/websites.html). Pages are written in RMarkdown (when code rendering is required) or Markdown (when no code rendering is required). Each page requires YAML frontmatter to be properly processed. Refer to the template (not yet created), for the requisite YAML information.
+This website uses the [RMarkdown Website Generator](https://bookdown.org/yihui/rmarkdown/websites.html). Pages are written in RMarkdown (when code rendering is required) or Markdown (when no code rendering is required). Each page requires YAML frontmatter to be properly processed. Refer to the template for the requisite YAML information.
 
 You will need to have the `rmarkdown` package installed.
 
