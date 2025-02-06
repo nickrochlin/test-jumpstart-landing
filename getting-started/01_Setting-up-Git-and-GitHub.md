@@ -10,8 +10,6 @@ https://git-scm.com/
 
 Head to https://github.com and sign up.
 
-Let Mathew (mathew.vis-dunbar@ubc.ca) or Jason (jason.pither@ubc.ca) know the email address you've created your account with and we\'ll add you to the ubc-biology organization page, which will give you access to all of our content.
-
 ## Install and Configure git Locally
 
 ### Install {-}

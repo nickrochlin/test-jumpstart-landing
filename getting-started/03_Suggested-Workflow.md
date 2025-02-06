@@ -2,8 +2,6 @@
 
 ## 1 Clone the repository
 
-[Instructions here](https://github.com/ubco-biology/Getting-started/blob/main/02_Git-Basics.md).
-
 ## 2 Update
 
 Ensure your local repository is up to date with `remote`
@@ -61,6 +59,8 @@ $ git add myNewFile.md # stage that edit
 $ git commit -m 'added myNewFile.md' # commit that edit
 ```
 
+**Note** When you build the RMarkdown site in your new branch, you don't want to `add` or `commit` the output that is directed to `website/` or `docs/`, so make you sure that you only `add` the .Rmd files that you edited. This is save trouble with resolving conflicts in the html files.
+
 ## 6 Update
 
 Next, we ensure that our main branch is still up to date. Switch over to `main` and `pull`
@@ -91,7 +91,7 @@ Fast-forward
  create mode 100644 this.md
 ```
 
-It's at this point that we might encounter a merge conflict. The nature of the error will depend on where you are in the git queue. Read the section on [resolving merge conflicts](https://github.com/ubco-biology/Getting-started/blob/main/06_Merge-Conflicts.md) to sort these out before pushing to the server. In the mean time, let's assume things are smooth and check things out
+It's at this point that we might encounter a merge conflict. The nature of the error will depend on where you are in the git queue. Read the section on resolving merge conflicts to sort these out before pushing to the server. In the mean time, let's assume things are smooth and check things out
 
 ```
 $ git status
@@ -107,7 +107,11 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-## 8 Push to GitHub
+## 8 Build the site in `main`
+
+Now we build the site in `main`, and again do an `add` and `commit` to get the rendered html files in `website/` or `docs/` tracked in git and ready for upload to GitHub.
+
+## 9 Push to GitHub
 
 And finally we\'ll send everything up to the server with `push` which does a server merge
 
@@ -115,7 +119,7 @@ And finally we\'ll send everything up to the server with `push` which does a ser
 $ git push
 ```
 
-## 9 Tidy up
+## 10 Tidy up
 
 Now that we\'re done with our branch we can delete it.
 
