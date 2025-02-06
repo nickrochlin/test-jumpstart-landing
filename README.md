@@ -4,7 +4,11 @@ This is the delivery content for the pilot RDM Jumpstart, scheduled to run May 1
 
 ## Using this Repository
 
-This website uses the [RMarkdown Website Generator](https://bookdown.org/yihui/rmarkdown/websites.html). Pages are written in RMarkdown (when code rendering is required) or Markdown (when no code rendering is required). Each page requires YAML frontmatter to be properly processed. Refer to the template for the requisite YAML information.
+This website uses the [RMarkdown Website Generator](https://bookdown.org/yihui/rmarkdown/websites.html). Pages are written in RMarkdown (when code rendering is required) or Markdown (when no code rendering is required). Each page requires YAML frontmatter to be properly processed.
+
+The website is fed from the `docs/` directory. During development, output will be directed to the `website/` directory, so that `docs/` can hold the 'save the date' information.
+
+**Refer to the `template.Rmd` file for RMarkdown markup and the requisite YAML information.**
 
 You will need to have the `rmarkdown` package installed.
 

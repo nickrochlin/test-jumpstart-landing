@@ -1,4 +1,4 @@
-.note, .question {
+.note, .question, .flag {
   padding: 10px;
   margin: 20px 0px;
   border-radius: 5px;
@@ -12,6 +12,11 @@
 .question {
   border: 1pt solid #1f7b0d;
   background-color: #f1fdf0;
+}
+
+.flag {
+  border: 1pt solid #9d0606;
+  background-color: #f9f3f3;
 }
 
 #footer {

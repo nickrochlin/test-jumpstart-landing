@@ -3,9 +3,51 @@ title: "Template" # this doesn't show anywhere, normally this would produce an H
 pagetitle: "Something meaningful" # this appears in the tab
 output:
   html_document:
+    code_folding: show # allows toggling of showing and hiding code. Remove if not using code.
+    code_download: true # allows the user to download the source .Rmd file. Remove if not using code.
+    includes:
+      after_body: footer.html # include a custom footer.
     toc: true
     toc_depth: 3
     toc_float:
       collapsed: false
       smooth_scroll: false
 ---
+
+## Start with a level two header
+
+:::note
+This is a note.
+:::
+
+:::question
+This is a question.
+:::
+
+:::flag
+This is a flag.
+:::
+
+The following can be used for erroneous code, incorrect output, and proper code with correct output. The otuput at the moment is a little jarring. We'll fix this.    
+
+```{r class.source="bg-danger", class.output="bg-warning"}
+mtcars[1:5, "mpg"]
+```
+
+```{r df-drop-ok, class.source="bg-success"}
+mtcars[1:5, "mpg", drop = FALSE]
+```
+
+All code is shown by default. You can change this default in the YAML by swapping `code_folding: show` to `code_folding: hide`.
+
+To override this default, when `code_folding: show` is true:
+
+```{r class.source = 'fold-hide'}
+2  # code is hidden initially
+```
+
+And when `code_folding: hide` is true:
+
+```{r class.source = 'fold-show'}
+2  # code is hidden initially
+```

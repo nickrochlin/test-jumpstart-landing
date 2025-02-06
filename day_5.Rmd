@@ -3,8 +3,12 @@ title: "Day 5"
 pagetitle: "Deposit and Wrap-Up"
 output:
   html_document:
-    code_folding: hide
+    code_folding: show # allows toggling of showing and hiding code. Remove if not using code.
+    code_download: true # allows the user to download the source .Rmd file. Remove if not using code.
+    includes:
+      after_body: footer.html # include a custom footer.
     toc: true
+    toc_depth: 3
     toc_float:
       collapsed: false
       smooth_scroll: false

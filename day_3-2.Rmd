@@ -3,6 +3,10 @@ title: "Day 3 - Part 2"
 pagetitle: "Scripting and Documentation"
 output:
   html_document:
+    code_folding: show # allows toggling of showing and hiding code. Remove if not using code.
+    code_download: true # allows the user to download the source .Rmd file. Remove if not using code.
+    includes:
+      after_body: footer.html # include a custom footer.
     toc: true
     toc_depth: 3
     toc_float:

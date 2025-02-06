@@ -11,7 +11,7 @@
 
 
 
-<title>Pending</title>
+<title>Something meaningful</title>
 
 <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -33,6 +33,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
@@ -59,6 +61,11 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+#rmd-source-code {
+  display: none;
+}
+</style>
 
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -220,6 +227,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -377,20 +387,63 @@ div.tocify {
 
 <div id="header">
 
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+<li role="separator" class="divider"></li>
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
 
 
-<h1 class="title toc-ignore">Day 4 - Part 2</h1>
+
+<h1 class="title toc-ignore">Template</h1>
 
 </div>
 
 
-<div id="getting-the-data" class="section level2">
-<h2>Getting the Data</h2>
+<div id="start-with-a-level-two-header" class="section level2">
+<h2>Start with a level two header</h2>
+<div class="note">
+<p>This is a note.</p>
+</div>
+<div class="question">
+<p>This is a question.</p>
+</div>
+<div class="flag">
+<p>This is a flag.</p>
+</div>
+<p>The following can be used for erroneous code, incorrect output, and
+proper code with correct output. The otuput at the moment is a little
+jarring. We’ll fix this.</p>
+<pre class="r bg-danger"><code>mtcars[1:5, &quot;mpg&quot;]</code></pre>
+<pre class="bg-warning"><code>## [1] 21.0 21.0 22.8 21.4 18.7</code></pre>
+<pre class="r bg-success"><code>mtcars[1:5, &quot;mpg&quot;, drop = FALSE]</code></pre>
+<pre><code>##                    mpg
+## Mazda RX4         21.0
+## Mazda RX4 Wag     21.0
+## Datsun 710        22.8
+## Hornet 4 Drive    21.4
+## Hornet Sportabout 18.7</code></pre>
+<p>All code is shown by default. You can change this default in the YAML
+by swapping <code>code_folding: show</code> to
+<code>code_folding: hide</code>.</p>
+<p>To override this default, when <code>code_folding: show</code> is
+true:</p>
+<pre class="r fold-hide"><code>2  # code is hidden initially</code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>And when <code>code_folding: hide</code> is true:</p>
+<pre class="r fold-show"><code>2  # code is hidden initially</code></pre>
+<pre><code>## [1] 2</code></pre>
 </div>
 
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiVGVtcGxhdGUiICMgdGhpcyBkb2Vzbid0IHNob3cgYW55d2hlcmUsIG5vcm1hbGx5IHRoaXMgd291bGQgcHJvZHVjZSBhbiBIMSBoZWFkZXIgYXQgdGhlIHRvcCBvZiB0aGUgcmVuZGVyZWQgcGFnZS4gVGhpcyBoYXMgYmVlbiBvdmVycmlkZW4gaW4gdGhlIGNzcy4KcGFnZXRpdGxlOiAiU29tZXRoaW5nIG1lYW5pbmdmdWwiICMgdGhpcyBhcHBlYXJzIGluIHRoZSB0YWIKb3V0cHV0OgogIGh0bWxfZG9jdW1lbnQ6CiAgICBjb2RlX2ZvbGRpbmc6IHNob3cgIyBhbGxvd3MgdG9nZ2xpbmcgb2Ygc2hvd2luZyBhbmQgaGlkaW5nIGNvZGUuIFJlbW92ZSBpZiBub3QgdXNpbmcgY29kZS4KICAgIGNvZGVfZG93bmxvYWQ6IHRydWUgIyBhbGxvd3MgdGhlIHVzZXIgdG8gZG93bmxvYWQgdGhlIHNvdXJjZSAuUm1kIGZpbGUuIFJlbW92ZSBpZiBub3QgdXNpbmcgY29kZS4KICAgIGluY2x1ZGVzOgogICAgICBhZnRlcl9ib2R5OiBmb290ZXIuaHRtbCAjIGluY2x1ZGUgYSBjdXN0b20gZm9vdGVyLgogICAgdG9jOiB0cnVlCiAgICB0b2NfZGVwdGg6IDMKICAgIHRvY19mbG9hdDoKICAgICAgY29sbGFwc2VkOiBmYWxzZQogICAgICBzbW9vdGhfc2Nyb2xsOiBmYWxzZQotLS0KCiMjIFN0YXJ0IHdpdGggYSBsZXZlbCB0d28gaGVhZGVyCgo6Ojpub3RlClRoaXMgaXMgYSBub3RlLgo6OjoKCjo6OnF1ZXN0aW9uClRoaXMgaXMgYSBxdWVzdGlvbi4KOjo6Cgo6OjpmbGFnClRoaXMgaXMgYSBmbGFnLgo6OjoKClRoZSBmb2xsb3dpbmcgY2FuIGJlIHVzZWQgZm9yIGVycm9uZW91cyBjb2RlLCBpbmNvcnJlY3Qgb3V0cHV0LCBhbmQgcHJvcGVyIGNvZGUgd2l0aCBjb3JyZWN0IG91dHB1dC4gVGhlIG90dXB1dCBhdCB0aGUgbW9tZW50IGlzIGEgbGl0dGxlIGphcnJpbmcuIFdlJ2xsIGZpeCB0aGlzLiAgICAKCmBgYHtyIGNsYXNzLnNvdXJjZT0iYmctZGFuZ2VyIiwgY2xhc3Mub3V0cHV0PSJiZy13YXJuaW5nIn0KbXRjYXJzWzE6NSwgIm1wZyJdCmBgYAoKYGBge3IgZGYtZHJvcC1vaywgY2xhc3Muc291cmNlPSJiZy1zdWNjZXNzIn0KbXRjYXJzWzE6NSwgIm1wZyIsIGRyb3AgPSBGQUxTRV0KYGBgCgpBbGwgY29kZSBpcyBzaG93biBieSBkZWZhdWx0LiBZb3UgY2FuIGNoYW5nZSB0aGlzIGRlZmF1bHQgaW4gdGhlIFlBTUwgYnkgc3dhcHBpbmcgYGNvZGVfZm9sZGluZzogc2hvd2AgdG8gYGNvZGVfZm9sZGluZzogaGlkZWAuCgpUbyBvdmVycmlkZSB0aGlzIGRlZmF1bHQsIHdoZW4gYGNvZGVfZm9sZGluZzogc2hvd2AgaXMgdHJ1ZToKCmBgYHtyIGNsYXNzLnNvdXJjZSA9ICdmb2xkLWhpZGUnfQoyICAjIGNvZGUgaXMgaGlkZGVuIGluaXRpYWxseQpgYGAKCkFuZCB3aGVuIGBjb2RlX2ZvbGRpbmc6IGhpZGVgIGlzIHRydWU6CgpgYGB7ciBjbGFzcy5zb3VyY2UgPSAnZm9sZC1zaG93J30KMiAgIyBjb2RlIGlzIGhpZGRlbiBpbml0aWFsbHkKYGBg</div>
 <div id="footer">
     <hr />
     <p>Built and rendered curtousy of <a href="https://rmarkdown.rstudio.com/index.html" target ="blank">RMarkdown from RStudio</a></p>
+    <p><a>Contributors</a></p>
 </div>
 
 
@@ -428,6 +481,12 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("template.Rmd");
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
 
 <script>
 $(document).ready(function ()  {
