@@ -10,6 +10,8 @@ The website is fed from the `docs/` directory. During development, output will b
 
 **Refer to the `template.Rmd` file for RMarkdown markup and the requisite YAML information.**
 
+## RMarkdown Package
+
 You will need to have the `rmarkdown` package installed.
 
 ```
@@ -20,12 +22,11 @@ To generate the site, from within `RStudio` you can simply use the `Build Websit
 
 A few notes:
 
-* The website is output to the `docs` directory.
 * If you need to load external scripts not part of your RMarkdown document, place these in the `scripts` directory.
 * If you need to reference external files, place these in the `files` directory.
 * If you need to non-hyperlinkable images, plase these in the `images` directory.
 
-**Merge Conflicts**
+## Merge Conflicts
 
 These can be particularly challenging to handle in this environment as the html output is also tracked by `git`. Here's the suggested workflow.
 
@@ -37,7 +38,7 @@ These can be particularly challenging to handle in this environment as the html 
 * `add`, `commit`, `push`.
 * Cross your fingers.
 
-**YAML**
+## YAML
 
 YAML is a serialized language comprised of key value pairs, in essence, this means spaces are significant. Key value pairs are seperated by a colon and space `: ` and indenting of additional arguments uses a tab. The entire thing is wrapped in three back dashes `---`
 
@@ -50,7 +51,7 @@ output:
 ---
 ```
 
-**\_site.yml**
+## _site.yml
 
 Site level paramters are defined in this YAML file. Likely the most relevant part of this file is the `navbar` key.
 
