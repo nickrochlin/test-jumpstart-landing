@@ -15,3 +15,5 @@ output:
 ---
 
 ## Day 1
+
+This is a test to show that we have created new content.  Much excitement, such fun!
