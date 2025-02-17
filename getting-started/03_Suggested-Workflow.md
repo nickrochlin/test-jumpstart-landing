@@ -47,7 +47,7 @@ $ git branch
 
 ## 5 Make your edits
 
-Make you edits in your new branch, `git add` and `git commit -m` these when you\'re done.
+Make your edits in your new branch, `git add` and `git commit -m` these when you\'re done.
 
 ```
 $ git switch yourNewBranchNameHere # in case you're not already there
