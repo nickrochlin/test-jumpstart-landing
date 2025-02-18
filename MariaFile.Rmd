@@ -1,6 +1,0 @@
-#Maria random doc to see how this works
-
-Can I open the files with R studio and then use the GitBash to commit? I remember doing commit from R Studio directly, but I forgot how.
-
-##This is a file that can be deleted 
-
